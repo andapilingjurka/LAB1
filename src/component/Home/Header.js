@@ -1,9 +1,9 @@
 import React from 'react';
-import './Header.css';
+// import './Header.css';
 
 const Header = ()=>{
     return(
-        <header>
+        <header className='container-header'>
             <div className='container'>
                 <div className='col-md-6'> 
                     <h2>Bringing loving care to health care</h2>
@@ -12,7 +12,7 @@ const Header = ()=>{
                     <button>Order Now </button>
                     <button>Learn More</button>
                 </div>
-                <div className='col-md-6'>
+                <div>
 
                 </div>
 

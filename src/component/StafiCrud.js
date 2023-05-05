@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import '../StafiCrud.css';
+// import '../StafiCrud.css';
 
 
 function StafiCrud() {

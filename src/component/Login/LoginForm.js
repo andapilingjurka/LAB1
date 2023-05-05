@@ -3,8 +3,9 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 //import "./Login.css";
 import { BrowserRouter as Router, Route, Switch, Routes} from 'react-router-dom';
+import logo from "./logo.png"
 
-import logo from "./logo.png";
+
 function LoginForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -14,13 +15,13 @@ function LoginForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('https://localhost:7178/api/User/Login', {
+      const { data } = await axios.post('https://localhost:7131/api/User/Login', {
         email,
         password,
       });
       if (data) {
         setMessage('Login successful');
-        navigate("/test")
+        navigate("/home")
         // Redirect to home page or any other page
       }
     } catch (error) {
@@ -30,10 +31,10 @@ function LoginForm() {
   };
 
   return (
-    <div class="container">
-   <div> <img src={logo} /> </div>
-
-      <form onSubmit={handleSubmit}>
+    <div className="container_login">
+  
+      <img src={logo}/>
+      <form onSubmit={handleSubmit} className='login_form'>
       {message && <div>{message}</div>}
         <div>
           <label>Email</label> 

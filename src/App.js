@@ -8,6 +8,7 @@ import StafiCrud  from './component/StafiCrud';
 import { BrowserRouter as Router, Route, Switch, Routes} from 'react-router-dom';
 import Header from './component/Home/Header';
 import LoginForm  from './component/Login/LoginForm';
+import Registration from './component/Login/Registration';
 
 
 
@@ -21,7 +22,7 @@ function App() {
 
            <Routes>
        <Route path="/login" element={<LoginForm />} />
-        <Route path="/registration" element={<Header/>} />
+        <Route path="/registration" element={<Registration/>} />
         
 
       </Routes> 

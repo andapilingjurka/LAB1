@@ -11,3 +11,312 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.main-footer{
+  color: white;
+  background-color: rgb(78, 123, 137);
+  margin-top: 50px;
+  padding-top: 50px;
+  position: relative;
+  bottom: 0;
+  height: 300px;
+}
+
+.col {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family:'Averia Serif Libre';
+ 
+}
+
+.col h4{
+  font-size: 28px;
+  font-weight: bold;
+  font-family:'Averia Serif Libre';
+  color: black;
+}
+
+.list-unstyled{
+ padding-top: 60px;
+ color: white;
+ font-family:'Averia Serif Libre';
+ font-size: 20px;
+ 
+}
+
+
+/* FOTTERRRRRRRRRRRRRRRRRrrr */
+
+.container-header{
+  background: url("./assets/photo1.png") center no-repeat;
+  background-size: 100% auto;
+  width:100%;
+  max-width: 100%;
+  text-align: left;
+  height: auto;
+  overflow: hidden;
+  padding: 160px 0px;
+  margin-top: 0px;
+ 
+
+}
+
+
+
+
+.container-header h2{
+  color: black;
+  font-size: 35px;
+  line-height: 60px;
+  font-weight: bolder;
+  font-family: 'Averia Serif Libre';
+  width: 100%;
+  text-transform: uppercase;
+
+}
+
+.container-header p{
+  color: black;
+  font-family: 'Averia Serif Libre';
+  margin: 15px 0px;
+  font-size: 17px;
+
+}
+
+.container-header button{
+  width: 170px;
+  height: 60px;
+  background-color:black;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  margin:50px 30px 20px 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Averia Serif Libre';
+  
+}
+
+.container-header button:last-of-type{
+  background-color:black;
+  color: white;
+}
+
+
+.container-header button:hover{
+  transition: .2s ease-in-out;
+}
+
+.container-header button:first-of-type:hover{
+  background-color:lightgray;
+  color: black;
+  font-weight: bolder;
+}
+.container-header button:last-of-type:hover{
+  background-color: lightgray;
+  color: black;
+  font-weight: bolder;
+}
+
+/* HEADERRRRRRRRR */
+.numbers{
+  background-color: gray;
+  padding: 25px 0px;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 0px;
+}
+
+.numbers row{
+  margin: 15px 0px ;
+}
+.numbers h2{
+  font-size: 50px;
+  font-weight: bold;
+  margin: 10px 0px; 
+  color: white;
+  font-family: 'Averia Serif Libre';
+  line-height: 50px;
+}
+
+.numbers h5{
+  text-transform: uppercase;
+  color:white;
+  font-family: 'Averia Serif Libre';
+  font-weight: bold;
+  letter-spacing: 1px;  
+  font-size: 15px; 
+}
+
+.pride{
+  background-color: transparent;
+  padding: 25px 0px;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+
+}
+
+.pride img{
+ max-width: 100%; 
+ border-radius: 10px;
+ margin-top: 50px;
+ 
+}
+
+.pride h2 , .ingredients h2{
+  font-size: 30px;
+  font-weight: bold;
+  width: 80%;
+  margin: 10px 0px; 
+  color: #a82d49;
+  font-family: 'Averia Serif Libre';
+  line-height: 50px;
+  padding-top: 50px;
+}
+
+.pride p  , .ingredients p{
+  font-size: 18px;
+  line-height: 28px;
+  color:black;
+  font-family: 'Averia Serif Libre';
+  margin-top: 15px;
+}
+
+.pride button , .ingredients button{
+  background-color: #a82d49;
+  border: 1px solid white;
+  box-sizing: border-box;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  margin-top:20px ;
+  
+
+
+}
+
+.pride button a , .ingredients button a{
+  display: block;
+  color: white;
+  font-family: 'Averia Serif Libre';
+  text-decoration: none !important;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.pride button:hover a , 
+.ingredients button:hover a{
+  color: black;
+  transition: .2s ease;
+}
+
+.pride button:hover, 
+.ingredients button:hover{
+  background-color: gray;
+}
+
+
+
+.ingredients ul{
+  padding: 0px;
+
+}
+
+.ingredients ul li{
+  list-style-type: square;
+  font-family: 'Averia Serif Libre';
+  color: black;
+  margin-top: 10px;
+}   
+
+
+.ingredients{
+  background-color: transparent;
+  padding: 25px 0px;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+
+}
+
+
+.ingredients img{
+ height: 100%;
+ width:150%;
+ padding-right: 150px;
+ padding-top: 10%;
+}
+
+.col-md-6 .ul-li{
+  font-size: 18px;
+}
+
+/* HOMEEEEEE */
+
+
+
+.container_login{
+  width: 900px;
+  margin: 30px auto;
+ box-shadow: 20px silver ;
+  display:  flex;
+  background-image: url(./component/Login/a12.png);
+  height: 500px;
+}
+
+.login_form  {
+
+  width: 300px;
+  margin: auto;
+  max-width: 600px;
+  max-height: 700px;
+  border-radius: 20px;
+  
+}
+.login_form input {
+      
+     
+     text-align:  left !important ;
+      padding: 8px;
+      background-color: #e6f5ff;
+      border: 1px solid rgb(39, 160, 208);
+      resize: none; 
+      margin-bottom:20px ;
+  }
+
+  .login_form button {
+      height: 30px;
+      width: 100px;
+      align-items: center;
+      border: none;
+      background-color: #2a6fb4;
+      color: white;
+      cursor: pointer;
+      margin-right: 10px; 
+     
+      
+          
+  }
+ .container_login img {
+      margin:145px 20px;
+  }
+ 
+  h1{
+    text-align: center;
+   
+  }
+
+  .login_form label {
+      font-size:18px;
+  }
+
+   
+ 
+
+/* Login */
