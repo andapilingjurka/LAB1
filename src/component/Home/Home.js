@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Header from './Header';
-import './Home.css';
+// import './Home.css';
 import prideimg from './../../assets/photo4.jpg';
 import ingredients from './../../assets/photo5.png';
 
