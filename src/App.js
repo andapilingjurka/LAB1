@@ -17,14 +17,11 @@ function App() {
     <>
     <Fragment>
            <Nav />
-           <Home />
-           <Footer />
-
-           <Routes>
-       <Route path="/login" element={<LoginForm />} />
-        <Route path="/registration" element={<Registration/>} />
-        
-
+          
+      <Routes>
+           <Route exact path="/" Component={Home} />
+           <Route exact path="/login" Component={LoginForm} />
+           <Route exact path="/registration" Component={Registration} />
       </Routes> 
        
 

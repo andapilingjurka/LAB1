@@ -3,6 +3,7 @@ import Header from './Header';
 // import './Home.css';
 import prideimg from './../../assets/photo4.jpg';
 import ingredients from './../../assets/photo5.png';
+import Footer from '../Footer/Footer';
 
 const Home = ()=>{
     return(
@@ -67,7 +68,7 @@ const Home = ()=>{
                     </div>
                 </div>
               </section>
-
+            <Footer />
          </Fragment>
 
       
