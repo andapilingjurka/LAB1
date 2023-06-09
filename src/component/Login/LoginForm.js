@@ -4,6 +4,9 @@ import { Link, useNavigate } from 'react-router-dom';
 //import "./Login.css";
 import { BrowserRouter as Router, Route, Switch, Routes} from 'react-router-dom';
 import logo from "./logo.png"
+import { decodeToken } from './jwtUtils';
+
+
 
 
 function LoginForm() {
@@ -15,13 +18,23 @@ function LoginForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('https://localhost:7131/api/User/Login', {
+      const response = await axios.post('https://localhost:7131/api/User/Login', {
         email,
         password,
       });
-      if (data) {
+
+      const {token} = response.data;
+      localStorage.setItem('token',token);
+      const role = decodeToken(token).role;
+      if (response) {
         setMessage('Login successful');
-        navigate("/home")
+        if(role ==='admin'){
+          navigate("/registration")
+        }else if (role === 'client') {
+          navigate('/');
+        }
+        
+       
         // Redirect to home page or any other page
       }
     } catch (error) {
@@ -32,7 +45,7 @@ function LoginForm() {
 
   return (
     <div className="container_login">
-  
+        {/* <Nav /> */}
       <img src={logo}/>
       <form onSubmit={handleSubmit} className='login_form'>
       {message && <div>{message}</div>}
