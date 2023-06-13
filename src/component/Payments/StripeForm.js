@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './StripeForm.css';
+// import './StripeForm.css';
 import card_img from "./card_img.png";
 const StripeForm = () => {
   const navigate = useNavigate();
