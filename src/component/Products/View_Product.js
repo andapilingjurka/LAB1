@@ -16,7 +16,7 @@ export default function View_Product() {
   }, []);
 
   async function Load() {
-    const result = await axios.get('https://localhost:7178/api/Product/GetProduct');
+    const result = await axios.get('https://localhost:8811/api/Product/GetProduct');
     setProducts(result.data);
     const filteredProduct = result.data.find((product) => product.id === Number(productID));
     setFilteredProduct(filteredProduct);
