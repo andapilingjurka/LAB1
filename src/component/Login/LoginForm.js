@@ -18,18 +18,18 @@ function LoginForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://localhost:7131/api/User/Login', {
+      const response = await axios.post('https://localhost:8811/api/User/Login', {
         email,
         password,
       });
-
+      
       const { token } = response.data;
       localStorage.setItem('token', token);
       const role = decodeToken(token).role;
       if (response) {
         setMessage('Login successful');
         if (role === 'admin') {
-          navigate("/registration")
+          navigate("/admin")
         } else if (role === 'client') {
           navigate('/');
         }

@@ -30,7 +30,7 @@ function Registration() {
           
             
             try {
-              const response = await axios.post("https://localhost:7131/api/User/Register", {
+              const response = await axios.post("https://localhost:8811/api/User/Register", {
                
                 FirstName: FirstName,
                 Email: Email,

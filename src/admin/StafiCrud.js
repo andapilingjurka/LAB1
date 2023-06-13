@@ -14,7 +14,7 @@ const [stafi, setUsers] = useState([]);
   }, []);
   async function Load() {
     
-    const result = await axios.get("https://localhost:7051/api/Stafi/GetStafi");
+    const result = await axios.get("https://localhost:8811/api/Stafi/GetStafi");
     setUsers(result.data);
     console.log(result.data);
   }
@@ -22,7 +22,7 @@ const [stafi, setUsers] = useState([]);
   
     event.preventDefault();
     try {
-      await axios.post("https://localhost:7051/api/Stafi/AddStafi", {
+      await axios.post("https://localhost:8811/api/Stafi/AddStafi", {
         
         stname: stname,
         pershkrimi: pershkrimi,
@@ -48,7 +48,7 @@ const [stafi, setUsers] = useState([]);
   }
  
   async function DeleteStafi(id) {
-  await axios.delete("https://localhost:7051/api/Stafi/DeleteStafi/" + id);
+  await axios.delete("https://localhost:8811/api/Stafi/DeleteStafi/" + id);
    alert("Employee deleted Successfully");
    setId("");
    setName("");
@@ -60,7 +60,7 @@ const [stafi, setUsers] = useState([]);
     event.preventDefault();
     try {
  
-  await axios.patch("https://localhost:7051/api/Stafi/UpdateStafi/"+ stafi.find((u) => u.id === id).id || id,
+  await axios.patch("https://localhost:8811/api/Stafi/UpdateStafi/"+ stafi.find((u) => u.id === id).id || id,
         {
         id: id,
         stname: stname,
