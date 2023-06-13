@@ -60,7 +60,7 @@ const [produktikozmetik, setUsers] = useState([]);
   }
  
   async function DeleteProduktiKozmetik(id) {
-  await axios.delete('https://localhost:7119/api/ProduktiKozmetik/DeleteProduktiKozmetik/' + id);
+  await axios.delete('https://localhost:8811/api/ProduktiKozmetik/DeleteProduktiKozmetik/' + id);
    alert("Employee deleted Successfully");
    setId("");
    setName("");
@@ -76,7 +76,7 @@ const [produktikozmetik, setUsers] = useState([]);
     event.preventDefault();
     try {
  
-  await axios.patch( 'https://localhost:7119/api/ProduktiKozmetik/UpdateProduktiKozmetik/'+ produktikozmetik.find((u) => u.id === id).id || id,
+  await axios.patch( 'https://localhost:8811/api/ProduktiKozmetik/UpdateProduktiKozmetik/'+ produktikozmetik.find((u) => u.id === id).id || id,
         {
         id: id,
         name: name,

@@ -18,7 +18,8 @@ function Nav() {
         <>
             <Link to='/'>Home</Link>
             <Link to='/header'>Header</Link>
-           
+            <Link to='/Payments/StripeForm'>Payments</Link>
+            <Link to='/Products/'>Produktet</Link>
             {localStorage.getItem('token') ? (
           <li>
             <button onClick={handleLogout}>Logout</button>
@@ -27,6 +28,7 @@ function Nav() {
           <li>
             <Link to="/login">Login</Link>
           </li>
+          
         )}
         </>
   

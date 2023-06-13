@@ -19,7 +19,7 @@ const [products, setProducts] = useState([]);
   }, []);
   async function Load() {
     
-    const result = await axios.get("https://localhost:7178/api/Product/GetProduct");
+    const result = await axios.get("https://localhost:8811/api/Product/GetProduct");
     setProducts(result.data);
     console.log(result.data);
   }
@@ -67,7 +67,7 @@ async function editProduct(products) {
 }
 
 async function deleteProduct(id) {
-  await axios.delete("https://localhost:7178/api/Product/DeleteProduct/" + id);
+  await axios.delete("https://localhost:8811/api/Product/DeleteProduct/" + id);
   alert("Product deleted successfully");
   setId("");
   setName("");
@@ -81,7 +81,7 @@ async function update(event) {
   event.preventDefault();
   try {
     const product = products.find((p) => p.id === id);
-    await axios.patch("https://localhost:7178/api/Product/UpdateProduct/" + product.id, {
+    await axios.patch("https://localhost:8811/api/Product/UpdateProduct/" + product.id, {
       id: product.id,
       name: name,
       description: description,
