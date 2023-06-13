@@ -31,7 +31,7 @@ const [products, setProducts] = useState([]);
 
     event.preventDefault();
     try {
-      await axios.post("https://localhost:7178/api/Product/addProduct", {
+      await axios.post("https://localhost:8811/api/Product/addProduct", {
         
         name: name,
         description: description,
