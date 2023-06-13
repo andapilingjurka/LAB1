@@ -262,28 +262,26 @@ code {
 
 
 .container_login{
-  width: 900px;
+  width: 100%;
+  height: 800px;
+  display: flex;
   margin: 30px auto;
  box-shadow: 20px silver ;
   display:  flex;
-  background-image: url(./component/Login/a12.png);
-  height: 500px;
+background-color: skyblue;
+ 
 }
 
 .login_form  {
 
-  width: 300px;
-  margin: auto;
-  max-width: 600px;
-  max-height: 700px;
-  border-radius: 20px;
-  
+  width: 600px;
+  margin-left: 90px;  
 }
 .login_form input {
       
      
      text-align:  left !important ;
-      padding: 8px;
+      padding: 30px;
       background-color: #e6f5ff;
       border: 1px solid rgb(39, 160, 208);
       resize: none; 
@@ -291,14 +289,16 @@ code {
   }
 
   .login_form button {
-      height: 30px;
-      width: 100px;
+      height: 40px;
+      width: 600px;
       align-items: center;
       border: none;
       background-color: #2a6fb4;
       color: white;
       cursor: pointer;
       margin-right: 10px; 
+      margin-top: 40px;
+
      
       
           
@@ -317,6 +317,24 @@ code {
   }
 
    
+ 
+
+/* Login */
+.photo {
+  width: 50%;
+  height: 800px;
+  background-image: url(./component/Login/photoform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form-content{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
  
 
 /* Login */

@@ -65,8 +65,9 @@ function Registration() {
             }
           }
   return (
-    <div className="container_login">
-      <div> <img src={logo} /> </div>
+    <div className="container_login" >
+      <div className='photo'>  </div> 
+     <div className='form-content'>
         <form onSubmit={handleSubmit} className='login_form'>
        
             <input type='text' id='Id' value={Id} 
@@ -105,9 +106,13 @@ function Registration() {
              
              
             <button >Save</button>
+            <br></br>
             <Link to={"/login"}>Press here to Log In </Link>
         </form>
+        </div>
+        
     </div>
+
   )
 }
 

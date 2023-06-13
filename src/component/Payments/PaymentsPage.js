@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import './PaymentsPage.css';
+// import './PaymentsPage.css';
 const PaymentsPage = () => {
   const location = useLocation();
   const { state } = location;
