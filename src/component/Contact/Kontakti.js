@@ -44,28 +44,28 @@ const [kontakts, setUsers] = useState([]);
 
         <div>
            
-        <div class="container mt-4">
-       <img src="../images/pharmacy.jpg" />
-          <form>
+        <div class="containerK">
+      
+          <form className="FormaKontakti">
           <h1>Contact Here!</h1>
          
-            <div class="form-group">
+            <div class="form-groupK">
             
-              <input  type="text" class="form-control" id="id" hidden value={id} onChange={(event) => {setId(event.target.value); }} />
+              <input  type="text" class="form-controlK" id="id" hidden value={id} onChange={(event) => {setId(event.target.value); }} />
    
               
-              <input type="text" class="form-control" id="name" placeholder="Enter name" value={name}  onChange={(event) => { setName(event.target.value); }}  />
+              <input type="text" class="form-controlK" id="name" placeholder="Enter name" value={name}  onChange={(event) => { setName(event.target.value); }}  />
             </div>
   
-            <div class="form-group">
-          <input type="text" class="form-control" id="email" placeholder="Enter email" value={email} onChange={(event) => { setEmail(event.target.value); }} />
+            <div class="form-groupK">
+          <input type="text" class="form-controlK" id="email" placeholder="Enter email" value={email} onChange={(event) => { setEmail(event.target.value); }} />
             </div>
   
-            <div class="form-group">  <textarea name="message" id="message" rows="19" cols="50" placeholder="Enter message..."  value={message}  onChange={(event) => {  setMessage(event.target.value);  }} />
+            <div class="form-groupK">  <textarea name="message" id="message" rows="19" cols="50" placeholder="Enter message..."  value={message}  onChange={(event) => {  setMessage(event.target.value);  }} />
             </div>
   
             <div>
-              <button class="btn btn-primary mt-4" onClick={save}>
+              <button class="btn-K" onClick={save}>
                 Send 
               </button>
              
