@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import './KontaktiCrud.css';
+// import './KontaktiCrud.css';
  
  
 function KontaktiCrud() {
@@ -88,7 +88,7 @@ const [kontakts, setUsers] = useState([]);
 
       <div>
          
-      <div class="container mt-4">
+      {/* <div class="container mt-4">
      <img src="../images/pharmacy.jpg" />
         <form>
         <h1>Contact Here!</h1>
@@ -120,7 +120,7 @@ const [kontakts, setUsers] = useState([]);
         </form>
       </div>
       <br></br>
- 
+  */}
       <table class="table table-dark" align="center">
         <thead>
           <tr>

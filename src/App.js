@@ -17,6 +17,8 @@ import AdminProdukte from './admin/AdminProduktet';
 import adminStafi from './admin/StafiCrud';
 import View_Product from './component/Products/View_Product';
 import ProduktiKozmetikCrud from './admin/ProduktiKozmetikCrud'
+import Kontakti from './component/Contact/Kontakti';
+import KontaktiCrud from './component/Contact/KontaktiCrud';
 
 
 
@@ -40,8 +42,11 @@ function App() {
            <Route exact path="/admin" Component={Admin} />  
            <Route exact path="/adminProduktet" Component={AdminProdukte} />
            <Route exact path="/adminStafi" Component={adminStafi} />
-           <Route exact path="/admin/ProduktiKozmetikCrud" Component={ProduktiKozmetikCrud} />
+           <Route exact path="/ProduktiKozmetikCrud" Component={ProduktiKozmetikCrud} />
            <Route exact path='/view_product/:productID' Component={View_Product} />
+           <Route exact path='/kontakti' Component={Kontakti} />
+           <Route exact path='/kontaktCrud' Component={KontaktiCrud} />
+
 
       </Routes> 
 

@@ -26,6 +26,8 @@ import createUtilityClassName from 'react-bootstrap/esm/createUtilityClasses';
         <li style={{textDecoration:'none', listStyle:'none'}}> <Link style={{textDecoration:'none', color:'white', fontSize:'30px'}} to='/adminProduktet' id="l1">Produktet</Link></li>
         <li style={{textDecoration:'none', listStyle:'none'}}> <Link style={{textDecoration:'none', color:'white', fontSize:'30px'}}  to='/adminStafi' id="l2">Stafi</Link></li>
         <li style={{textDecoration:'none', listStyle:'none'}}> <Link style={{textDecoration:'none', color:'white', fontSize:'30px'}}  to='/ProduktiKozmetikCrud' id="l3">Produkte Kozmetike</Link></li>
+        <li style={{textDecoration:'none', listStyle:'none'}}> <Link style={{textDecoration:'none', color:'white', fontSize:'30px'}}  to='/kontaktCrud' id="l3">Kontakti</Link></li>
+
         </ul>
    
         </div>
