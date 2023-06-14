@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 // import './PaymentsPage.css';
 const PaymentsPage = () => {
   const location = useLocation();
@@ -9,7 +10,7 @@ const PaymentsPage = () => {
   const [description, setDescription] = useState('');
   const [currency, setCurrency] = useState('');
   const [amount, setAmount] = useState('');
-
+  const navigate = useNavigate();
   useEffect(() => {
     if (state && state.product) {
       const { price, description } = state.product;
@@ -40,6 +41,8 @@ const PaymentsPage = () => {
       // Payment created successfully
       const payment = await response.json();
       console.log('Payment created:', payment);
+      navigate('/Products')
+      
     } else {
       // Error creating payment
       console.error('Error creating payment');

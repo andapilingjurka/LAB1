@@ -33,6 +33,7 @@ const StripeForm = () => {
       }),
     });
 
+    
     if (response.ok) {
       // Customer created successfully
       const customer = await response.json();
