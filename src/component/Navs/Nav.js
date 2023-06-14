@@ -28,7 +28,7 @@ function Nav() {
 
         {localStorage.getItem('token') ? (
           
-            <button onClick={handleLogout} style={{ marginLeft: '10px', marginRight: '40px', padding: '5px 10px', backgroundColor: 'white', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bolder', fontSize: '20px', }}>Logout</button>
+            <button onClick={handleLogout} style={{ marginLeft: '10px', marginRight: '40px', padding: '5px 10px', backgroundColor: 'black', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bolder', fontSize: '20px', }}>Logout</button>
           
         ) : (
           <Link to="/login" style={{ marginLeft: '10px', marginRight: '40px', textDecoration: 'none', color: 'white', fontWeight: 'bolder', fontSize: '20px' }}>Login</Link>
