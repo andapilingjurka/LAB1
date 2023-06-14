@@ -47,59 +47,66 @@ const PaymentsPage = () => {
   };
 
   return (
-    <div className="container">
-      <form onSubmit={handleFormSubmit} className="p-4 mb-5 bg-white shadow-sm rounded border">
+    <div style={{ backgroundColor: '#c7eaff' ,minHeight:'100vh',fontFamily: 'Candara',display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+      <form onSubmit={handleFormSubmit} style={{borderRadius:'20px',border: '1px solid #ccc',padding:'100px',background:' #F0F0F0',marginTop:'50px' }}>
         <div className="form-group">
-          <label htmlFor="customerId">Customer ID:</label>
+          <label  style={{fontWeight:'bold',fontSize:'18px'}} htmlFor="customerId">Customer ID:</label>
           <input
             type="text"
             id="customerId"
             className="form-control"
             value={customerId}
             onChange={(e) => setCustomerId(e.target.value)}
+            style={{ padding: '10px',borderRadius: '10px', border: '1px solid #ccc',width:'400px'}}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="receiptEmail">Receipt Email:</label>
+          <label  style={{fontWeight:'bold',fontSize:'18px'}} htmlFor="receiptEmail">Receipt Email:</label>
           <input
             type="text"
             id="receiptEmail"
             className="form-control"
             value={receiptEmail}
             onChange={(e) => setReceiptEmail(e.target.value)}
+            style={{ padding: '10px',borderRadius: '10px', border: '1px solid #ccc',width:'400px'}}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="description">Description:</label>
+          <label  style={{fontWeight:'bold',fontSize:'18px'}} htmlFor="description">Description:</label>
           <input
             type="text"
             id="description"
             className="form-control"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
+            style={{ padding: '10px',borderRadius: '10px', border: '1px solid #ccc',width:'400px'}}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="currency">Currency:</label>
+          <label  style={{fontWeight:'bold',fontSize:'18px'}} htmlFor="currency">Currency:</label>
           <input
             type="text"
             id="currency"
             className="form-control"
             value={currency}
             onChange={(e) => setCurrency(e.target.value)}
+            style={{ padding: '10px',borderRadius: '10px', border: '1px solid #ccc',width:'400px'}}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="amount">Amount:</label>
+          <label  style={{fontWeight:'bold',fontSize:'18px'}} htmlFor="amount">Amount:</label>
           <input
             type="text"
             id="amount"
             className="form-control"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
+            style={{ padding: '10px',borderRadius: '10px', border: '1px solid #ccc',width:'400px'}}
           />
         </div>
-        <button type="submit" className="btn btn-primary btn-block">Submit</button>
+        <div style={{marginTop:'40px'}}>
+        <button type="submit" className="btn btn-primary btn-block" style={{padding:'10px',borderRadius:'10px',width:'400px',marginTop:'30px',background:'darkred',color:'white',fontWeight:'bolder',border: '1px solid #ccc',fontSize:'18px'}} >Submit</button>
+        </div>
       </form>
     </div>
   );
