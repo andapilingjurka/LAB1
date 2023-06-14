@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import axios from 'axios';
-import UserLayout from './UserLayout';
+
 
 export default function Produktet() {
   const [products, setProducts] = useState([]);
@@ -30,7 +30,7 @@ export default function Produktet() {
 
   return (
     <div>
-      <UserLayout />
+      
       <div className="d-flex justify-content-center flex-row flex-wrap w-100 mt-5">
         {products.map((item, index) => (
           <div key={index} className="card produktetCard d-flex flex-row flex-wrap container m-2" style={{ width: '40vh', background: 'rgba(255,255,255,0.4)' }}>
