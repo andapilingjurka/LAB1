@@ -13,8 +13,11 @@ import StripeForm from './component/Payments/StripeForm';
 import PaymentsPage from './component/Payments/PaymentsPage';
 import Produktet from './component/Products/Produktet';
 import Admin from './admin/Admin';
-import AdminProdukte from './admin/AdminProduktet'
-import adminStafi from './admin/StafiCrud'
+import AdminProdukte from './admin/AdminProduktet';
+import adminStafi from './admin/StafiCrud';
+import View_Product from './component/Products/View_Product';
+
+
 
 
 
@@ -30,12 +33,13 @@ function App() {
            <Route exact path="/" Component={Home} />
            <Route exact path="/login" Component={LoginForm} />
            <Route exact path="/registration" Component={Registration} />
-           <Route exact path="/Products/Produktet" Component={Produktet} />
+           <Route exact path="/Products" Component={Produktet} />
            <Route exact path="/Payments/StripeForm" element={<StripeForm />} />
            <Route exact path="/PaymentsPage" element={<PaymentsPage />} />
            <Route exact path="/admin" Component={Admin} />  
            <Route exact path="/adminProduktet" Component={AdminProdukte} />
            <Route exact path="/adminStafi" Component={adminStafi} />
+           <Route exact path='/view_product/:productID' Component={View_Product} />
 
       </Routes> 
 

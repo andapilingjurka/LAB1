@@ -15,7 +15,7 @@ const [kontakts, setUsers] = useState([]);
   }, []);
   async function Load() {
     
-    const result = await axios.get("https://localhost:7032/api/Kontakti/GetKontakti");
+    const result = await axios.get("https://localhost:8811/api/Kontakti/GetKontakti");
     setUsers(result.data);
     console.log(result.data);
   }
@@ -23,7 +23,7 @@ const [kontakts, setUsers] = useState([]);
   
     event.preventDefault();
     try {
-      await axios.post(  'https://localhost:7032/api/Kontakti/AddKontakti', {
+      await axios.post(  'https://localhost:8811/api/Kontakti/AddKontakti', {
         
         name: name,
         email: email,
@@ -51,7 +51,7 @@ const [kontakts, setUsers] = useState([]);
   }
  
   async function DeleteKontakti(id) {
-  await axios.delete( 'https://localhost:7032/api/Kontakti/DeleteKontakti/' + id);
+  await axios.delete( 'https://localhost:8811/api/Kontakti/DeleteKontakti/' + id);
    alert("Delete successful!");
    setId("");
    setName("");
@@ -63,7 +63,7 @@ const [kontakts, setUsers] = useState([]);
     event.preventDefault();
     try {
  
-  await axios.patch("https://localhost:7032/api/Kontakti/UpdateKontakti/"+ kontakts.find((u) => u.id === id).id || id,
+  await axios.patch("https://localhost:8811/api/Kontakti/UpdateKontakti/"+ kontakts.find((u) => u.id === id).id || id,
         {
         id: id,
         name: name,
@@ -169,4 +169,4 @@ const [kontakts, setUsers] = useState([]);
     
   }
   
-  export default KontaktiCrud;
+  export default KontaktiCrud; 

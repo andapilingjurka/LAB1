@@ -44,7 +44,7 @@ export default function Produktet() {
               </div>
               <div className="d-flex flex-row justify-content-around align-items-end">
               <a href={`/view_product/${item.id}`} className="btn btn-primary">View Product</a>
-                <button onClick={() => handleAddToCart(item.id)} className="btn btn-success">Add to Cart</button>
+                <button onClick={() => handleAddToCart(item.id)} className="btn btn-success">Order</button>
               </div>
             </div>
           </div>
