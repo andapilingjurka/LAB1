@@ -20,11 +20,11 @@ function Nav() {
   return (
 
     <>
-      <div style={{ display: 'flex', fontFamily: 'Candara', justifyContent: 'right', alignItems: 'center', padding: '20px', backgroundColor: 'white', borderBottom: '1px solid white' }}>
-        <Link to="/" style={{ marginLeft: '10px', marginRight: '40px', textDecoration: 'none', color: 'black', fontWeight: 'bolder', fontSize: '20px' }}>Home</Link>
-        <Link to="/Products/" style={{ marginLeft: '10px', marginRight: '40px', textDecoration: 'none', color: 'black', fontWeight: 'bolder', fontSize: '20px' }}>Produktet</Link>
-        <Link to="/kontakti" style={{ marginLeft: '10px', marginRight: '40px', textDecoration: 'none', color: 'black', fontWeight: 'bolder', fontSize: '20px' }}>Contact us</Link>
-        {isAdmin && <Link to="/admin" style={{ marginLeft: '10px', marginRight: '40px', textDecoration: 'none', color: 'black', fontWeight: 'bolder', fontSize: '20px' }}>Dashboard</Link>}
+      <div style={{ display: 'flex', fontFamily: 'Candara', justifyContent: 'right', alignItems: 'center', padding: '20px', backgroundColor: '#024585e5', borderBottom: '1px solid white' }}>
+        <Link to="/" style={{ marginLeft: '10px', marginRight: '40px', textDecoration: 'none', color: 'white', fontWeight: 'bolder', fontSize: '20px' }}>Home</Link>
+        <Link to="/Products/" style={{ marginLeft: '10px', marginRight: '40px', textDecoration: 'none', color: 'white', fontWeight: 'bolder', fontSize: '20px' }}>Produktet</Link>
+        <Link to="/kontakti" style={{ marginLeft: '10px', marginRight: '40px', textDecoration: 'none', color: 'white', fontWeight: 'bolder', fontSize: '20px' }}>Contact us</Link>
+        {isAdmin && <Link to="/admin" style={{ marginLeft: '10px', marginRight: '40px', textDecoration: 'none', color: 'white', fontWeight: 'bolder', fontSize: '20px' }}>Dashboard</Link>}
 
         {localStorage.getItem('token') ? (
           
