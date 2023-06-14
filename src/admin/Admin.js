@@ -4,24 +4,38 @@ import { decodeToken } from '../component/Login/jwtUtils';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-function Admin() {
+import createUtilityClassName from 'react-bootstrap/esm/createUtilityClasses';
+ function Admin() {
 
-    const token = localStorage.getItem('token');
-    const decodedToken = decodeToken(token);
-    const navigate = useNavigate();
+//     const token = localStorage.getItem('token');
+//     const decodedToken = decodeToken(token);
+//     const navigate = useNavigate();
   
  
-    if (!decodedToken || decodedToken.role !== 'admin') {
-      navigate('/login');
-      return ; // Return null to prevent rendering the dashboard content
-    }
+//     if (!decodedToken || decodedToken.role !== 'admin') {
+//       navigate('/login');
+//       return ; // Return null to prevent rendering the dashboard content
+//     }
       
   return (
     <div>
-         <Link to='/adminProduktet'>Produktet</Link>
-         <Link to='/adminStafi'>Stafi</Link>
+   < div className="side-menu">
+    <h1>DASHBOARD</h1>
+      <ul>
+       
+        <li> <Link to='/adminProduktet' id="l1">Produktet</Link></li>
+        <li> <Link to='/adminStafi' id="l2">Stafi</Link></li>
+        </ul>
+   
+        </div>
+        <div class="container1">
+            <h1>Welcome to Dashboard !</h1>
+            <div className="fotojaDashboard">
+      <img src="./photos/fotojaDashboard.jpg" alt="Description of the image" />
     </div>
+  </div>
+</div>
   )
-}
 
-export default Admin
+  }
+export default Admin;
