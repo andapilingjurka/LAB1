@@ -75,6 +75,8 @@ async function deleteProduct(id) {
   setPrice("");
   setQuantiry("");
   setImg("");
+
+  Load();
 }
 
 async function update(event) {
