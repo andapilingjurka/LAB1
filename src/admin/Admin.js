@@ -18,7 +18,7 @@ import createUtilityClassName from 'react-bootstrap/esm/createUtilityClasses';
      }
       
   return (
-    <div>
+    <div className='paraDashboard'>
    < div className="side-menu">
     <h1>DASHBOARD</h1>
       <ul>

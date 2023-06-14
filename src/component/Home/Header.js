@@ -9,8 +9,8 @@ const Header = ()=>{
                     <h2>Bringing loving care to health care</h2>
                     <p>In our pharmacies, you will be assisted by our qualified staff and you will have easy and quick access to the medicines and medical tools you need.</p>
                     <p>Rush to our pharmacies for a healthier and happier life!</p>
-                    <button>Order Now </button>
-                    <button>Learn More</button>
+                    <button style={{backgroundColor:"#024585e5"}}>Order Now </button>
+                    <button style={{backgroundColor:"#024585e5"}}>Learn More</button>
                 </div>
                 <div>
 
