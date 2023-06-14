@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 //import "./Login.css";
 import { BrowserRouter as Router, Route, Switch, Routes } from 'react-router-dom';
-import logo from "./logo.png"
+
 import { decodeToken } from './jwtUtils';
 
 
