@@ -7,15 +7,15 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import createUtilityClassName from 'react-bootstrap/esm/createUtilityClasses';
  function Admin() {
 
-//     const token = localStorage.getItem('token');
-//     const decodedToken = decodeToken(token);
-//     const navigate = useNavigate();
+     const token = localStorage.getItem('token');
+     const decodedToken = decodeToken(token);
+     const navigate = useNavigate();
   
  
-//     if (!decodedToken || decodedToken.role !== 'admin') {
-//       navigate('/login');
-//       return ; // Return null to prevent rendering the dashboard content
-//     }
+     if (!decodedToken || decodedToken.role !== 'admin') {
+       navigate('/login');
+       return ; // Return null to prevent rendering the dashboard content
+     }
       
   return (
     <div>
@@ -23,8 +23,8 @@ import createUtilityClassName from 'react-bootstrap/esm/createUtilityClasses';
     <h1>DASHBOARD</h1>
       <ul>
        
-        <li> <Link to='/adminProduktet' id="l1">Produktet</Link></li>
-        <li> <Link to='/adminStafi' id="l2">Stafi</Link></li>
+        <li style={{textDecoration:'none', listStyle:'none'}}> <Link style={{textDecoration:'none', color:'white', fontSize:'30px'}} to='/adminProduktet' id="l1">Produktet</Link></li>
+        <li style={{textDecoration:'none', listStyle:'none'}}> <Link style={{textDecoration:'none', color:'white', fontSize:'30px'}}  to='/adminStafi' id="l2">Stafi</Link></li>
         </ul>
    
         </div>

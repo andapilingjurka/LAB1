@@ -26,9 +26,9 @@ function Nav() {
         {isAdmin && <Link to="/admin" style={{ marginLeft: '10px', marginRight: '40px', textDecoration: 'none', color: 'black', fontWeight: 'bolder', fontSize: '20px' }}>Dashboard</Link>}
 
         {localStorage.getItem('token') ? (
-          <li>
+          
             <button onClick={handleLogout} style={{ marginLeft: '10px', marginRight: '40px', padding: '5px 10px', backgroundColor: 'black', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bolder', fontSize: '20px', }}>Logout</button>
-          </li>
+          
         ) : (
           <Link to="/login" style={{ marginLeft: '10px', marginRight: '40px', textDecoration: 'none', color: '#333', fontWeight: 'bolder', fontSize: '20px' }}>Login</Link>
         )}
